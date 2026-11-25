@@ -1,6 +1,7 @@
 import heroImg from '../assets/figma/hero.webp'
 import Button from '../components/Button'
 import { stats } from '../data/content'
+import CountUp from '../components/CountUp'
 
 export default function Hero() {
   return (
@@ -48,7 +49,7 @@ export default function Hero() {
               style={{ '--d': `${300 + i * 80}ms` }}
               className="h-[87px] border-t border-[rgba(244,243,240,0.31)]"
             >
-              <p className="m-0 pt-[19px] text-[34px] leading-[37.4px] font-medium tracking-[-1.02px] text-[#f4f3f0]">{s.value}</p>
+              <p className="m-0 pt-[19px] text-[34px] leading-[37.4px] font-medium tracking-[-1.02px] text-[#f4f3f0]"><CountUp value={s.value} /></p>
               <p className="m-0 mt-[11px] text-[13px] leading-[19.5px] text-white">{s.label}</p>
             </div>
           ))}
