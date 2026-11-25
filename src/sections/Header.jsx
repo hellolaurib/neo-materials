@@ -7,7 +7,7 @@ import { navLinks } from '../data/content'
 export function TickerBar() {
   // Figma "Ticker bar" (123:186) — example data, not a live feed.
   return (
-    <div className="flex h-[35px] items-center justify-between gap-6 bg-navy px-4 text-[13px] whitespace-nowrap md:px-[120px]">
+    <div className="flex h-[35px] items-center justify-center bg-navy px-4 text-[13px] whitespace-nowrap md:px-[120px]">
       <div className="flex items-center gap-[10px] overflow-hidden">
         <span className="font-medium text-white">TSX: NEO</span>
         <span className="text-white/85">CA$26.69</span>
@@ -15,7 +15,6 @@ export function TickerBar() {
         <span className="text-white/40">·</span>
         <span className="text-white/70">OTCQX: NOPMF</span>
       </div>
-      <p className="m-0 hidden overflow-hidden text-white/85 md:block">Q3 2026: revenue up 60% and full-year guidance raised</p>
     </div>
   )
 }
