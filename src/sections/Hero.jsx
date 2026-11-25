@@ -13,7 +13,7 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           backgroundImage:
-            'linear-gradient(180deg, rgba(12,18,30,0.86) 0%, rgba(12,18,30,0.72) 45%, rgba(8,58,105,0.62) 70%, rgba(0,133,202,0.97) 92%, rgb(0,133,202) 100%)',
+            'linear-gradient(180deg, rgba(8,12,22,0.94) 0%, rgba(8,12,22,0.86) 45%, rgba(6,40,78,0.82) 70%, rgba(0,105,165,0.97) 92%, rgb(0,110,170) 100%)',
         }}
       />
 
