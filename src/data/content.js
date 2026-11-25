@@ -24,10 +24,19 @@ export const stats = [
 export const businesses = [
   {
     image: bizMagnets,
+    title: 'Magnequench',
     text: 'Rare earth magnetic powders and permanent magnets powering electric vehicles, robotics and AI data centres, now made in Europe.',
   },
-  { image: bizChemicals, title: 'Chemicals and Oxides' },
-  { image: bizRareMetals, title: 'Rare metals' },
+  {
+    image: bizChemicals,
+    title: 'Chemicals and Oxides',
+    text: 'Separated rare earth oxides and advanced chemicals for auto catalysts, water treatment, electronics and clean energy.',
+  },
+  {
+    image: bizRareMetals,
+    title: 'Rare metals',
+    text: 'Gallium, hafnium, tantalum and other rare metals for superalloys, semiconductors and medical technologies.',
+  },
 ]
 
 export const applications = [
