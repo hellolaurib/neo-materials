@@ -5,6 +5,7 @@ import newsFeatured from '../assets/figma/news-featured.webp'
 import news2 from '../assets/figma/news-2.webp'
 import news3 from '../assets/figma/news-3.webp'
 import appVehicle from '../assets/figma/app-vehicle.webp'
+import appAi from '../assets/figma/app-ai.webp'
 import appEnergy from '../assets/figma/app-energy.webp'
 import appRobotics from '../assets/figma/app-robotics.webp'
 import appPollution from '../assets/figma/app-pollution.webp'
@@ -56,6 +57,7 @@ export const applications = [
     text: 'Permanent magnets and advanced materials that help wind turbines and high-efficiency motors generate and use energy more efficiently.',
   },
   {
+    image: appAi,
     title: 'AI and server cooling',
     text: 'Neo supplied 12 million magnets to AI data centres in 2025, keeping the cooling fans of high-performance servers running.',
   },
