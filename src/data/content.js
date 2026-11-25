@@ -4,6 +4,7 @@ import bizRareMetals from '../assets/figma/biz-rare-metals.webp'
 import newsFeatured from '../assets/figma/news-featured.webp'
 import news2 from '../assets/figma/news-2.webp'
 import news3 from '../assets/figma/news-3.webp'
+import appVehicle from '../assets/figma/app-vehicle.webp'
 
 export const navLinks = [
   { label: 'About', href: '#about' },
@@ -41,6 +42,7 @@ export const businesses = [
 
 export const applications = [
   {
+    image: appVehicle,
     title: 'Vehicle electrification',
     text: "Our magnets power the traction motors of hybrid and electric vehicles, including the world's first heavy rare earth free traction motor.",
   },
