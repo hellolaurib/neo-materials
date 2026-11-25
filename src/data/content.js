@@ -5,6 +5,10 @@ import newsFeatured from '../assets/figma/news-featured.webp'
 import news2 from '../assets/figma/news-2.webp'
 import news3 from '../assets/figma/news-3.webp'
 import appVehicle from '../assets/figma/app-vehicle.webp'
+import appEnergy from '../assets/figma/app-energy.webp'
+import appRobotics from '../assets/figma/app-robotics.webp'
+import appPollution from '../assets/figma/app-pollution.webp'
+import appAerospace from '../assets/figma/app-aerospace.webp'
 
 export const navLinks = [
   { label: 'About', href: '#about' },
@@ -47,6 +51,7 @@ export const applications = [
     text: "Our magnets power the traction motors of hybrid and electric vehicles, including the world's first heavy rare earth free traction motor.",
   },
   {
+    image: appEnergy,
     title: 'Energy transition',
     text: 'Permanent magnets and advanced materials that help wind turbines and high-efficiency motors generate and use energy more efficiently.',
   },
@@ -55,14 +60,17 @@ export const applications = [
     text: 'Neo supplied 12 million magnets to AI data centres in 2025, keeping the cooling fans of high-performance servers running.',
   },
   {
+    image: appRobotics,
     title: 'Robotics and automation',
     text: 'Bonded and sintered magnets for the joints, actuators and sensors that give industrial and humanoid robots precise movement.',
   },
   {
+    image: appPollution,
     title: 'Air and water pollution control',
     text: 'Environmental catalysts and specialty materials that reduce vehicle emissions and help treat water for cleaner communities.',
   },
   {
+    image: appAerospace,
     title: 'Aerospace',
     text: 'Hafnium and other rare metals for the superalloys inside jet engines, where materials must perform under extreme heat.',
   },
