@@ -1,24 +1,11 @@
-import { useRef } from 'react'
 import Button from '../components/Button'
 import { applications } from '../data/content'
 
 function AppRow({ app, index }) {
-  const previewRef = useRef(null)
-
-  // The preview image follows the cursor inside the row (only rows that have an image).
-  const onMove = (e) => {
-    const el = previewRef.current
-    if (!el) return
-    const r = e.currentTarget.getBoundingClientRect()
-    el.style.setProperty('--x', `${e.clientX - r.left}px`)
-    el.style.setProperty('--y', `${e.clientY - r.top}px`)
-  }
-
   return (
     <li
       data-reveal
       style={{ '--d': `${index * 60}ms` }}
-      onMouseMove={app.image ? onMove : undefined}
       className="group relative grid gap-3 border-b border-[#d9d9d9] px-2 py-6 transition-colors duration-300 hover:bg-[#f7f9fb] lg:h-[136px] lg:grid-cols-[660px_1fr] lg:gap-0 lg:px-6 lg:py-0"
     >
       <div className="relative z-10 lg:pt-6">
@@ -30,13 +17,13 @@ function AppRow({ app, index }) {
       <p className="relative z-10 m-0 text-[16px] leading-5 tracking-[-0.32px] text-muted lg:max-w-[580px] lg:pt-[66px]">{app.text}</p>
 
       {app.image && (
+        // Sits inside the row, in the free space between the title and the description.
+        // Revealed with a left-to-right wipe on hover.
         <div
-          ref={previewRef}
           aria-hidden
-          className="pointer-events-none absolute top-0 left-0 z-20 hidden h-[180px] w-[320px] -translate-x-1/2 -translate-y-1/2 scale-90 overflow-hidden rounded-[16px] opacity-0 shadow-[0_20px_50px_rgba(16,22,35,0.25)] transition-[opacity,scale] duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 [@media(hover:hover)]:block"
-          style={{ left: 'var(--x, 50%)', top: 'var(--y, 50%)' }}
+          className="pointer-events-none absolute top-3 bottom-3 left-[440px] hidden w-[200px] overflow-hidden rounded-[12px] opacity-0 transition-[opacity,clip-path] duration-500 ease-out [clip-path:inset(0_100%_0_0_round_12px)] group-hover:opacity-100 group-hover:[clip-path:inset(0_0_0_0_round_12px)] lg:[@media(hover:hover)]:block"
         >
-          <img src={app.image} alt="" className="size-full object-cover" />
+          <img src={app.image} alt="" className="size-full scale-110 object-cover transition-transform duration-700 ease-out group-hover:scale-100" />
         </div>
       )}
     </li>
